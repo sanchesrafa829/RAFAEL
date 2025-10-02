@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Início | AMAG</title>
+  <!-- CSS externo (não incluído aqui) -->
+  <link rel="stylesheet" href="amag_teste.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Cabeçalho padrão -->
+  <header class="site">
+    <h1>AMAG</h1>
+    <p>Associação Maria Aparecida Gomes</p>
+  </header>
+
+  <!-- Menu somente com páginas existentes -->
+  <nav class="site">
+    <a href="Menu.html">Início</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="Parceiros.html">Empresas Parceiras</a>
+    <a href="Quem somos.html">Quem Somos</a>
+    <a href="Regras.HTML">Regras</a>
+    <a href="Contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <!-- HERO / Sobre -->
+    <section class="hero">
+      <div>
+        <div class="kicker"></div>
+        <h2>AMAG: Transformando Futuros Através da Educação</h2>
+        <p>
+         
+         A AMAG (Associação Maria Aparecida Gomes) é uma entidade dedicada a capacitar adolescentes e jovens, oferecendo a eles as ferramentas
+          necessárias para um futuro de sucesso. Por meio de oficinas, cursos profissionalizantes e programas de aprendizagem, transformamos a 
+          realidade de quem mais precisa, inspirados pela fé e perseverança de nossa fundadora.        
+         
+        </p>
+                  
+       
+       
+        <a class="cta" href="Quem somos.html">Conheça nossa história</a>
+      </div>
+      <img src="quadro.png" alt="Equipe e atividades da AMAG" />
+    </section>
+
+    <!-- DESTAQUES: Cursos e Oficinas (Carrossel multi-itens) -->
+    <section class="fullbleed">
+      <div class="kicker" style="text-align:center;">DESTAQUES</div>
+      <h2>Principais cursos e oficinas</h2>
+
+      <div class="carousel courses" id="carousel-cursos" aria-label="Carrossel de cursos e oficinas">
+        <button class="nav prev" aria-label="Anterior">‹</button>
+
+        <div class="carousel-viewport">
+          <ul class="carousel-track">
+            <!-- Programa -->
+            <li class="course-card" data-cat="programa">
+              <img src="amag.jpg" alt="Programa Jovem Aprendiz" />
+              <span class="badge cat-programa">Programa</span>
+              <h3>Programa · Jovem aprendiz</h3>
+              <p>
+                Contrato médio de 1 ano e 3 meses (4 dias na empresa + 1 de teoria) com foco na inserção no mercado.
+              </p>
+              <a class="cta" href="cursos.html#aprendiz">Saiba mais</a>
+            </li>
+
+            <!-- Oficinas -->
+            <li class="course-card" data-cat="oficina">
+              <img src="amag.jpg" alt="Oficina de Desenho artístico" />
+              <span class="badge cat-oficina">Oficina</span>
+              <h3>Oficina · Desenho artístico</h3>
+              <p>Terças-feiras: criatividade e técnicas fundamentais de desenho.</p>
+              <a class="cta" href="cursos.html#oficinas">Saiba mais</a>
+            </li>
+
+            <li class="course-card" data-cat="oficina">
+              <img src="amag.jpg" alt="Oficina de Inclusão digital" />
+              <span class="badge cat-oficina">Oficina</span>
+              <h3>Oficina · Inclusão digital</h3>
+              <p>Sábados: informática básica, Word e Excel para estudo e trabalho.</p>
+              <a class="cta" href="cursos.html#oficinas">Saiba mais</a>
+            </li>
+
+            <!-- Qualificação -->
+            <li class="course-card" data-cat="qualificacao">
+              <img src="amag.jpg" alt="Cursos de qualificação SENAC/SENAI" />
+              <span class="badge cat-qualificacao">Qualificação</span>
+              <h3>Qualificação · SENAC/SENAI</h3>
+              <p>Assistente Administrativo, RH, TI e outros — com certificado.</p>
+              <a class="cta" href="cursos.html#qualificacao">Saiba mais</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="nav next" aria-label="Próximo">›</button>
+        <div class="dots" id="dots-cursos"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé compacto em linha -->
+ 
+ 
+ 
+ <footer class="site footer-compact">
+  <div class="footer-grid">
+    <!-- Coluna 1: Logo -->
+    <div class="footer-col footer-brand">
+      <img src="amag chat.png" alt="Logo AMAG" class="footer-logo">
+    </div>
+
+    <!-- Coluna 2: Redes Sociais -->
+    <div class="footer-col">
+      <h4>Nossas Redes Sociais</h4> <br>
+      <div class="social-row">
+        <a class="social-btn ig" href="https://www.instagram.com/amag.mandaguari/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="social-btn fb" href="https://www.facebook.com/amagmandaguari/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a class="social-btn wa" href="https://wa.me/5544999969911" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Coluna 3: Contato -->
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul class="footer-list">
+        <li><i class="fa-solid fa-phone"></i> Telefone: (44) 3133-0399</li>
+        <li><i class="fa-brands fa-whatsapp"></i> WhatsApp: (44) 9996-9911</li>
+        <li><i class="fa-solid fa-envelope"></i> 
+          <a href="mailto:amag.mandaguari@gmail.com" class="link-accent">amag.mandaguari@gmail.com</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Coluna 4: Endereço -->
+    <div class="footer-col">
+      <h4>Endereço</h4> <br>
+      <ul class="footer-list">
+        <li><i class="fa-solid fa-location-dot"></i> Avenida Presidente Vargas, 347 – Centro, Mandaguari-PR</li>
+      </ul>
+    </div>
+  </div> 
+</footer>
+
+
+  
+ 
+ 
+ 
+
+  <!-- JS do carrossel de cursos (sem CSS inline) -->
+  <script>
+    
+    
+    
+    
+    
+    
+    (function initCursosCarousel(){
+  const root = document.getElementById('carousel-cursos');
+  const track = root.querySelector('.carousel-track');
+  const cards = Array.from(track.children);
+  const prev = root.querySelector('.prev');
+  const next = root.querySelector('.next');
+  const dotsWrap = root.querySelector('#dots-cursos');
+
+  function perView(){
+    if (window.matchMedia('(max-width:640px)').matches) return 1;
+    if (window.matchMedia('(max-width:1024px)').matches) return 2;
+    return 4; // desktop (se quiser 4 por vez)
+  }
+
+  let index = 0; 
+  function pages(){ return Math.max(1, Math.ceil(cards.length / perView())); }
+
+  function update(){
+    const totalPages = pages();
+    index = Math.min(Math.max(index, 0), totalPages - 1);
+    track.style.transform = `translateX(-${index * 100}%)`;
+
+    // Atualiza dots
+    dotsWrap.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active', i===index));
+
+    // Mostra/esconde botões conforme necessário
+    prev.style.display = index === 0 ? 'none' : 'block';
+    next.style.display = index >= totalPages - 1 ? 'none' : 'block';
+  }
+
+  function buildDots(){
+    dotsWrap.innerHTML = '';
+    for (let i=0;i<pages();i++){
+      const d = document.createElement('div');
+      d.className = 'dot' + (i===index ? ' active':'');
+      d.addEventListener('click', ()=>{ index=i; update(); });
+      dotsWrap.appendChild(d);
+    }
+  }
+
+  // Navegação
+  prev.addEventListener('click', ()=>{ index -= 1; update(); });
+  next.addEventListener('click', ()=>{ index += 1; update(); });
+
+  // Auto-rotate só se houver mais de 1 página
+  let timer;
+  function startAutoRotate(){
+    if(pages() > 1){
+      timer = setInterval(()=>{ 
+        index = (index + 1) % pages(); 
+        update(); 
+      }, 6500);
+    }
+  }
+  startAutoRotate();
+
+  root.addEventListener('mouseenter', ()=> clearInterval(timer));
+  root.addEventListener('mouseleave', ()=> startAutoRotate());
+
+  window.addEventListener('resize', ()=>{ buildDots(); update(); });
+
+  buildDots(); update();
+})();
+   
+    
+    
+    
+
+    
+
+    
+    
+  </script>
+</body>
+</html>
